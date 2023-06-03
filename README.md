@@ -24,16 +24,29 @@ brew install argocd
 ```
 
 6. Access ArgoCD installation:
+```
 kubectl port-forward svc/argocd-server -n argocd 8080:443
+```
 
 Open http://localhost:8080 in your browser
 
+7. Get the current password in a terminal
+```
 argocd admin initial-password -n argocd
+```
 
-7. Update the password using the UI
+8. Update the password using the UI
 
-8. Create namespace for your Kubernetes deployments
+9. Create namespace for your Kubernetes deployments:
+```
 kubectl create namespace development 
+```
 
-9. Create an ArgoCD Project
+10. Create your ArgoCD Projects and Apps of Apps:
+```
 kubectl apply -f projects/
+```
+
+11. Create your apps using the Github Action Called "Create App" in the URL https://github.com/sergioarmgpl/IDPKCDColombia2023/actions
+
+12. Find your project and see how the application are created.
