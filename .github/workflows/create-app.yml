@@ -18,7 +18,8 @@ on:
         type: string
         description: Message to show
 jobs:
-  deploy-rocketchat:
+  create-argo-app:
+    runs-on: ubuntu-20.04
     steps:
     - name: Clone Repo
       uses: actions/checkout@v3
