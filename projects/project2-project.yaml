@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: project2
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  description: Project2
+  sourceRepos:
+  - 'https://github.com/sergioarmgpl/argocon2021.git'
+  destinations:
+  - namespace: development
+    server: https://kubernetes.default.svc
+    name: in-cluster
+
