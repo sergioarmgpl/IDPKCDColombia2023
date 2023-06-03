@@ -36,6 +36,8 @@ jobs:
         metadata:
           name: ${{ inputs.app-name }}
           namespace: argocd
+          finalizers:
+          - resources-finalizer.argocd.argoproj.io
         spec:
           destination:
             namespace: development
