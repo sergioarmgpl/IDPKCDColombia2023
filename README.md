@@ -51,7 +51,17 @@ kubectl apply -f projects/
 
 12. Find your project and see how the application are created.
 
-
+13. Check for the new services created for the apps
+```
 kubectl get svc -n development
+```
 
-kubectl port-forward svc/app1-srv 5001:5000 -n development
+14. Check for the new deployments created for the apps
+```
+kubectl get deploy -n development
+```
+
+15. Access an application
+```
+kubectl port-forward svc/APPNAME-srv 5001:5000 -n development
+```
