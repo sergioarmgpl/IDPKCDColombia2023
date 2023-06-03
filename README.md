@@ -50,3 +50,8 @@ kubectl apply -f projects/
 11. Create your apps using the Github Action Called "Create App" in the URL https://github.com/sergioarmgpl/IDPKCDColombia2023/actions
 
 12. Find your project and see how the application are created.
+
+
+kubectl get svc -n development
+
+kubectl port-forward svc/app1-srv 5001:5000 -n development

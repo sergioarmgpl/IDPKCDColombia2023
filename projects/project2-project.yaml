@@ -8,9 +8,11 @@ metadata:
 spec:
   description: Project2
   sourceRepos:
-  - 'https://github.com/sergioarmgpl/argocon2021.git'
+  - 'https://github.com/sergioarmgpl/IDPKCDColombia2023.git'
   destinations:
   - namespace: development
     server: https://kubernetes.default.svc
     name: in-cluster
-
+  - namespace: argocd
+    server: https://kubernetes.default.svc
+    name: in-cluster

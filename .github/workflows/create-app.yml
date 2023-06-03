@@ -27,8 +27,8 @@ jobs:
         repository: sergioarmgpl/IDPKCDColombia2023
         ref: main
 
-    - name: Create Deployment Definition
-      id: create-deployment-definition
+    - name: Create Application Definition
+      id: create-application-definition
       run: |
         cat <<EOF > apps/${{ inputs.project }}/${{ inputs.app-name }}.yaml
         apiVersion: argoproj.io/v1alpha1

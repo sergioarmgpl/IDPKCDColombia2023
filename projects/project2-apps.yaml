@@ -7,7 +7,7 @@ spec:
   destination:
     namespace: development
     server: https://kubernetes.default.svc
-  project: project1
+  project: project2
   source:
     path: apps/project2
     repoURL: https://github.com/sergioarmgpl/IDPKCDColombia2023
